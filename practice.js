@@ -32,3 +32,19 @@ function checkPalindrome(str) {
 }
 console.log(checkPalindrome(string1));
 console.log(checkPalindrome(string2));
+
+/* 4. FizzBuzz
+Write a function that prints the numbers from 1 to 100.
+But for multiples of three, print "Fizz" instead of the number and for the
+multiples of five, print "Buzz".
+For numbers which are multiples of both three and five,print "FizzBuzz". */
+function printNumFizzBuzz() {
+  for (let num = 1; num <= 100; num++) {
+    if (num % 3 === 0 && num % 5 === 0)
+      console.log(`${num} is a multiple of BOTH`);
+    else if (num % 3 === 0) console.log(`${num} is a multiple of 3`);
+    else if (num % 5 === 0) console.log(`${num} is a multiple of 5`);
+    else console.log(num);
+  }
+}
+printNumFizzBuzz();
