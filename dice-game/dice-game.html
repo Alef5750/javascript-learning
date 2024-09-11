@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two-Player Dice Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="game-status" class="game-status">
+      Set a winning score to start the game
+    </div>
+    <div class="game-container">
+      <div class="player player-1">
+        <div class="turn-indicator"></div>
+        <h2>Player 1</h2>
+        <p>Current Score: <span class="player-score" id="score-1">0</span></p>
+        <p>Total: <span id="total-1">0</span></p>
+        <div id="timer-1" class="timer">10</div>
+      </div>
+
+      <div class="game-center">
+        <input type="number" id="winning-score" placeholder="Winning Score" />
+        <div class="dice-container">
+          <div id="dice-1" class="dice">1</div>
+          <div id="dice-2" class="dice">1</div>
+        </div>
+        <button id="roll-dice">Roll Dice!</button>
+        <button id="new-game">New Game</button>
+      </div>
+
+      <div class="player player-2">
+        <div class="turn-indicator"></div>
+        <h2>Player 2</h2>
+        <p>Current Score: <span class="player-score" id="score-2">0</span></p>
+        <p>Total: <span id="total-2">0</span></p>
+        <div id="timer-2" class="timer">10</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
