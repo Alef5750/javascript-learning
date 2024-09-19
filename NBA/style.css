@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and navigation styles */
+header {
+    background-color: #17408B; /* NBA blue */
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #C9082A; /* NBA red */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #17408B; /* NBA blue */
+}
+
+/* Form styles */
+#search-player-div {
+    background-color: #F0F0F0;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"], 
+form select {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 80%;
+}
+
+form input[type="range"] {
+    width: 80%;
+    margin: 10px 0;
+}
+
+form input[type="range"]:focus {
+    outline: none;
+}
+
+/* Player table styles */
+#search-player-table-div {
+    margin-top: 20px;
+}
+
+#search-player-table-div table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 10px;
+}
+
+#search-player-table-div th, 
+#search-player-table-div td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#search-player-table-div th {
+    background-color: #C9082A; /* NBA red */
+    color: white;
+}
+
+#search-player-table-div td {
+    background-color: #E8E8E8;
+}
+
+/* Style for the range sliders' tooltip */
+input[type="range"]::before {
+    content: attr(title);
+    position: absolute;
+    background: #333;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+form input[type="submit"]:hover {
+    background-color: #C9082A; /* NBA red */
+}
+
+form input[type="submit"], #AddButton {
+    background-color: #17408B; /* NBA blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+/* fantasy CSS*/
+/* Styling for the main container */
+.players-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+/* Styling for each player box */
+.player-box {
+    background-color: #F0F0F0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Player name styling */
+.player-box h2 {
+    color: #17408B; /* NBA blue */
+    font-size: 18px;
+}
+
+/* Player details styling */
+.player-box p {
+    color: #333;
+    margin: 5px 0;
+}
+
+strong {
+    color: #C9082A; /* NBA red */
+}

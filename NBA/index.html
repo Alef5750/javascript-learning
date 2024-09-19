@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <H3>NBA FANTASY 2014-2024</H3>
+        </nav>
+    </header>
+    <main>
+    <div>
+        <h1>My Fantasy Team</h1>
+
+        <div class="players-container">
+            <!-- Player 1 -->
+            <div class="player-box" id="PGdiv">
+                <h2>Point Guard</h2>
+              <h3></h3>
+                <div class="details">
+
+                </div>
+            </div>
+
+            <!-- Player 2 -->
+            <div class="player-box" id="SGdiv">
+                <h2>Shooting Guard</h2>
+               <h3></h3>
+                 <div class="details">
+ 
+                 </div>
+             </div>
+
+            <!-- Player 3 -->
+            <div class="player-box" id="SFdiv">
+                <h2>Small Forward</h2>
+               <h3></h3>
+                 <div class="details">
+ 
+                 </div>
+             </div>
+
+            <!-- Player 4 -->
+            <div class="player-box" id="PFdiv">
+                <h2>Power Forward</h2>
+               <h3></h3>
+                 <div class="details">
+ 
+                 </div>
+             </div>
+
+            <!-- Player 5 -->
+            <div class="player-box" id="Cdiv">
+                <h2>Center</h2>
+               <h3></h3>
+                 <div class="details">
+ 
+                 </div>
+             </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+        <h1>NBA Player Search</h1>
+        <div id="search-player-div">
+            <form action="" id="player-search">
+                <select name="position" id="position">
+                    <option value="PG">PG</option>
+                    <option value="SG">SG</option>
+                    <option value="SF">SF</option>
+                    <option value="PF">PF</option>
+                    <option value="C">C</option>
+                </select>
+                <input type="range" min="0" max="20000" id="points" 
+                       title="Points" 
+                       onchange="this.title=this.value">
+                <input type="range" min="0" max="100" id="field-goals-precents" 
+                       title="Field Goal %" 
+                       onchange="this.title=this.value"> 
+                <input type="range" min="0" max="100" id="three-precents" 
+                       title="3-Point %" 
+                       onchange="this.title=this.value"> 
+                       <input type="submit" value="Search Player">
+            </form>
+            <div id="search-player-table-div">
+                <table >
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Position</th>
+                            <th>Points</th>
+                            <th>FG%</th>
+                            <th>3P%</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="main-search-tbody">
+                        <!-- Player data rows will go here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <!-- <script src="fantasy.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
