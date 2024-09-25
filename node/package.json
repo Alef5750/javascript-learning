@@ -1,0 +1,20 @@
+{
+  "name": "javascript-learning",
+  "version": "1.0.0",
+  "description": "A place for practicing and learning JavaScript (and TypeScript)",
+  "main": "practice.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.7.0"
+  }
+}
